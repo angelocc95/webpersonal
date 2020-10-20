@@ -1,0 +1,94 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    text-align: center;
+}
+h1
+{
+    font: bold 40px cursive, sans-serif; 
+}
+h2
+{
+    font: bold 20px cursive, sans-serif;
+}
+#imglogo
+{
+    float: left; /*float sirve para alinear algun elemento*/
+    border:2px solid black; 
+}
+
+#cabecera
+{
+    background-color: white;
+    border: 1px solid #999999;
+    padding: 20px;  
+}
+#menu
+{
+    background:rgb(243, 229, 30);
+    border: 1px solid;
+    padding: 20px 20px;
+    color: black;
+    font-family: cursive;
+}
+#menu li
+{
+    display: inline-block; /*Establece el tipo de caja generada por un elemento */
+    list-style: none;
+    padding: 5px;
+    font: bold 20px cursive;
+
+}
+#menu li a
+{
+    text-decoration: none;
+}
+
+#contenedor {
+    text-align: center;
+    width: 1300px;
+    height: 300px;
+   }
+   
+#lateral
+{
+    width: 400px;
+    margin: 50px;
+    float: right;
+    padding: 1px;
+    border: 2px solid black;
+}
+   
+#principal
+{
+    width: 600px;
+    float:  left;
+    margin: 50px;
+    background-color: #FFFFFF;
+   }
+
+ #pie
+{
+    clear: both;
+    text-align: center;
+    padding: 75px;
+    border-top: 2px solid black;
+    background:rgb(243, 229, 30);
+    font: bold 15px cursive;
+}
+#pie li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    font: bold 20px cursive;
+}
+#pie li a
+{
+    text-decoration: none;
+}
