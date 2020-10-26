@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="description" content="my web">
     <meta name="keywords" content="HTML5,CSS3, JavaScript">
+    <!-- fonst awesome iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- font oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/estilo.css">
     <title>PAGINA WEB</title>
 
-    <style>
-
-    </style>
-
 </head>
     <body>
-        <!-- cabecera -->
-        <header id=cabecera>
-            <div id="imglogo"> 
-                <img src="./image/logo.jpg" width=70px/> 
-            </div> 
-            <div>
-                <div><h1>MI PRIMERA PAGINA WEB</h1></div>
-            </div> 
-        </header>
-        <!-- menu de navegacion -->
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="acerca.html">Acerca</a></li>
-            <li><a href="Portafolio.html">Portafolio</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-
-    <!-- informacion principal -->
-    <div id="contenedor">
-                <figure>
-                    <img src="./image/img02.jpg" width="600px" height="300px">
-                </figure>
-    </div>
-    <!-- pie de pagina -->
-        <footer id="pie">
-            <h2>Redes Sociales</h2>
-                <ul>
-                    <li><a href="http://www.facebook.com/" target="_blank">Facebook</a></li>
-                    <li><a href="http://www.twitter.com/" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                    <li><a href="https://github.com/" target="_blank">Github</a></li>
+        <div class="container">
+            <!-- navegacion -->
+            <nav class="nav-main">
+                <!-- logo -->
+                <img src="./image/logo.jpg" class="nav-logo">
+                <!--menu de navegacion -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="Portafolio.html">Portafolio</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
+            </nav>
+        <hr>
+        <!-- informacion principal -->
+        <header class="showcase">
+            <h2>Big News Today!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
+              natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
+              similique!</p>
+            <a href="Contacto.html" class="btn">
+              Contactame <i class="fas fa-chevron-right"></i>
+            </a>
+        </header>
+        <!-- Redes -->
+        <section class="social">
+            <p>Sigueme en mis Redes</p>
+            <div class="links">
+              <a href="https://facebook.com">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://linkdin.com">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+          <!-- Footer -->
+        <footer class="footer">
+            <h3>copyright©2020 Todos Los Derechos Reservados</h3>
         </footer>
+
     </body>
 </html>
