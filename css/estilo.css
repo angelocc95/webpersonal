@@ -31,7 +31,7 @@ body {
   
   /* Navegacion */
   .nav-main {
-    font-size: 17px;
+    font-size: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ body {
     width: 50px;
   }
   
-  /* Navbar Left */
+  /* Navbar izquierda */
   .nav-main ul {
     display: flex;
   }
@@ -84,6 +84,19 @@ body {
   .btn:hover {
     opacity: 0.9;
   }
+  .showcase-port {
+    width: 100%;
+    height: 550px;
+    background: url("/image/img07.jpg") no-repeat center center/cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    color: black;
+  }
   
   .showcase {
     width: 100%;
@@ -107,34 +120,132 @@ body {
   .showcase .btn {
     margin-top: 20px;
   }
+  /* Banner */
+  .cards-banner {
+    width: 100%;
+    height: 450px;
+    background: url("/image/img02.jpg") no-repeat center center/cover;
+    margin-bottom: 40px;
+  }
+  
+  .cards-banner .content {
+    width: 40%;
+    padding: 250px 0 0 50px;
+    color: black;
+  }
+  
+  .cards-banner p{
+    margin: 10px 0 20px 0;
+  }
+/* Tarjetas */
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0;
+}
+
+.news-cards img {
+  width: 100%;
+  height: 180px;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-cards a {
+  padding: 10px 0;
+  color: #262626;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
   /* redes */
 .social {
-    margin: 50px;
-  }
-  .social p {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .links a {
-    margin: 0 30px;
-  }
-  
-  .links a i {
-    font-size: 3rem;
-  }
-  .footer {
-    background: #2f3640;
-    color: white;
-    font-size: 12px;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1rem;
-    padding-bottom: 20px;
+  margin: 20px;
+}
+.social p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 20px;
+}
+
+.links a i {
+  font-size: 2rem;
+}
+/* formulario Contacto */
+.form-contact {
+  width: 400px;
+  background:   #41348a;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-contact h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #41348a;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #eef0f3;
+  font-size: 18px;
+  color: white;
+}
+
+.form-contact p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-contact a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-contact .botons {
+  width: 100%;
+  background: #2d1c64;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+/* Pie de pagina */
+.footer {
+  background: #2f3640;
+  color: white;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
   }

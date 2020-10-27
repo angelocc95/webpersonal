@@ -4,49 +4,66 @@
     <meta charset="UTF-8">
     <meta name="description" content="my web">
     <meta name="keywords" content="HTML5,CSS3, JavaScript">
+    <!-- fonst awesome iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- font oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>PAGINA WEB</title>
-
-    <style>
-
-    </style>
+    <title>Contacto</title>
 
 </head>
     <body>
-        <!-- cabecera -->
-        <header id=cabecera>
-            <div id="imglogo"> 
-                <img src="./image/logo.jpg" width=70px/> 
-            </div> 
-            <div>
-                <div><h1>MI PRIMERA PAGINA WEB</h1></div>
-            </div>
-        </header>
-        <!-- menu de navegacion -->
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="acerca.html">Acerca</a></li>
-            <li><a href="Portafolio.html">Portafolio</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- informacion principal -->
-    <div id="contenedor">
-            <figure>
-                <img src="./image/img04.jpg" width="400px" height="300px">
-            </figure>
-    </div>
-    <!-- pie de pagina -->
-        <footer id="pie">
-            <h2>Redes Sociales</h2>
-                <ul>
-                    <li><a href="http://www.facebook.com/" target="_blank" class="icon-facebook">Facebook</a></li>
-                    <li><a href="http://www.twitter.com/" target="_blank" class="icon-twitter">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" class="icon-googleplus">Instagram</a></li>
-                    <li><a href="https://github.com/" target="_blank" class="icon-pinterest">Github</a></li>
+        <div class="container">
+            <!-- navegacion -->
+            <nav class="nav-main">
+                <!-- logo -->
+                <img src="./image/logo.jpg" class="nav-logo">
+                <!--menu de navegacion -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca</a></li>
+                    <li><a href="Portafolio.html">Portafolio</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
+            </nav>
+        <hr>
+        <!-- informacion principal -->
+        <div class="form-contact">
+            <h4>CONTACTAME</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electronico">
+            <textarea class="controls" name="message" id="message" rows="5" placeholder="Escribeme un mensaje"></textarea>
+            <input class="botons" type="submit" value="Enviar">
+        </div>
+      </div>
+        
+          <!-- Footer -->
+        <footer class="footer">
+          <section class="social">
+            <p>Sigueme en mis Redes</p>
+            <div class="links">
+                <a href="https://facebook.com">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkdin.com">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-discord"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </div>
+          </section>
+            <h3>copyright©2020 Todos Los Derechos Reservados</h3>
         </footer>
     </body>
 </html>
