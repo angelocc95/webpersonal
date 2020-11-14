@@ -30,10 +30,12 @@
         <!-- informacion principal -->
         <div class="form-contact">
             <h4>CONTACTAME</h4>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electronico">
+          <form action="form.php" method="POST">
+            <input class="controls" type="text" name="name" id="name" placeholder="Nombre">
+            <input class="controls" type="email" name="email" id="email" placeholder="Correo electronico">
             <textarea class="controls" name="message" id="message" rows="5" placeholder="Escribeme un mensaje"></textarea>
             <input class="botons" type="submit" value="Enviar">
+          </form>
         </div>
       </div>
         
