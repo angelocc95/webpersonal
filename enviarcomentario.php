@@ -13,20 +13,28 @@
 </head> 
 <body>
     <section class="titulo-form">
-    <h1>Tus Datos</h1>
-    <p>Estos son los datos que nos has enviado:</p>
-    <br>
     <?php
+    $Nombre = $_POST['name'];
+    $email = $_POST['email'];
+    $comentario = $_POST['message'];
 
-    echo("Nombre: ". $_POST['name']);echo("</br>");
-    echo("Correo Electronico: ". $_POST["email"]);echo("</br>");
-    echo("Tu comentario: ". $_POST["message"]);echo("</br>");
+    $conexion = mysqli_connect('localhost', 'root', '', 'comentario');
     
+    $resultado = mysqli_query($conexion, 'INSERT INTO usuario(Nombre, email, comentario) VALUES("' . $Nombre . '", "' . $email . '", "' . $comentario . '")');
+
+
+    if($resultado)
+        echo '<a  href="enviar.html"> Click here</a> Todo Correcto.';
+    else
+        echo('Error al enviar comentario');
+    mysqli_close($conexion);
     ?>
-    <br>
-    <p>Comprueba tus datos antes de enviarlos, si no están bien vuelve a escribirlos.</p><br>
-    <p>Los datos no son correctos: <a href="Contacto.html">Volver a escribirlos</a>
-    <p>Los datos son correctos: <a href="enviar.html">Enviar</a>
     </section>
 </body>
+
+<!-- <script languaje="javascript">
+$("enviar").click(function()){
+
+}
+</script> -->
 </html>

@@ -9,7 +9,7 @@
     <!-- font oswald -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"> 
     <link rel="stylesheet" href="./css/estilo.css">
-    <title>Angelo C</title>
+    <title>Comentarios</title>
 
 </head>
     <body>
@@ -25,26 +25,33 @@
                     <li><a href="Portafolio.html">Portafolio</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
                     <li><a href="comentarios.php">Comunidad</a></li>
-                    <div class="reloj">
-                      <span id="tiempo">00 : 00 : 00</span>
-                    </div>
-                    <script type="text/JavaScript" src="./relog.js"></script>
                 </ul>
             </nav>
         <hr>
-        <!-- Reloj -->
 
-        <!-- informacion principal -->
-        <header class="showcase">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
-              natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
-              similique!</p>
-            <a href="Contacto.html" class="btn">
-              Contactame <i class="fas fa-chevron-right"></i>
-            </a>
-        </header>
+        <!-- Comentarios conexion con bd -->
+        <div class="form-contact-coment">
+            <h1>Comentarios</h1>
+        <?php
 
+        $conexion = mysqli_connect('localhost', 'root', '', 'comentario');
+        $resultado = mysqli_query($conexion, 'SELECT * FROM usuario');
+
+        while ($usuario = mysqli_fetch_object($resultado))
+        {
+            ?>
+            <b><?php echo($usuario->Nombre); ?></b> <?php echo($usuario->email); ?> (<?php echo($usuario->fecha); ?>) dijo:
+            <br />
+            <?php echo($usuario->comentario); ?>
+            <br />
+            <hr />
+            <?php
+        }
+        ?>
+        <div>
+        <br>
+        <br>
+        <br>
       </div>
           <!-- Footer -->
         <footer class="footer">
